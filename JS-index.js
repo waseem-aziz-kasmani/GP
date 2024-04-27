@@ -19,5 +19,5 @@ c1.style.display  = "none";
 }
 
 function Open_TankCal(){
-open("https://github.com/waseem-aziz-kasmani/GP/blob/main/HTML-Tank.html"
+open("https://github.com/waseem-aziz-kasmani/GP/blob/main/HTML-Tank.html")
 }
