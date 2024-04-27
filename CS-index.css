@@ -7,7 +7,7 @@
 
 #D2, #D3{
 Width:230px;
-Height:90px;
+Height:15px;
 text-align: center;
 text-shadow: 1px 1px Gray;
 color:Black;
@@ -38,3 +38,4 @@ border-style: inset;
 padding: 5px 16px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+#CN1, #CN2{ display:none;}
