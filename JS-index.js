@@ -18,6 +18,25 @@ c1.style.display  = "none";
 }
 }
 
-function Open_TankCal(){
-open("https://github.com/waseem-aziz-kasmani/GP/blob/main/HTML-Tank.html")
+function Open_TankCalRound(){
+let c1 = document.getElementById("O1");
+let c2 = document.getElementById("O2");
+if (c1.style.display == "none"){
+ c2.style.display  = "none"; 
+ c1.style.display  = "block";
+}else{
+c1.style.display  = "none";
+}
+}
+function Open_TankCalRact(){
+
+let c1 = document.getElementById("O2");
+let c2 = document.getElementById("O1");
+c2.style.display  = "none"; 
+if (c1.style.display == "none"){
+ c1.style.display  = "block";
+ 
+}else{
+c1.style.display  = "none";
+}
 }
