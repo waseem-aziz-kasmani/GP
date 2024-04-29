@@ -1,7 +1,10 @@
+body{
+Width:100%;
+}
 #D1{display:block;}
 #BX {display:block;}
 
-#D1{Width:290px;background-color: LightBlue;}
+#D1{Width:230px;background-color: inherit;}
 
 #B1,#B2,#B3,{Width:150px;Height:10px;}
 
@@ -17,10 +20,10 @@ font-family: "Times New Roman", Times, serif;
 font-weight: bold;
 //background-image:radial-gradient(Gray, Black);
 //background-color: Yellow;
-background-image: linear-gradient(180deg, Lightyellow, Yellow);
+background-image: linear-gradient(180deg, LightGray, Gray);
 border-radius: -2px;
-border: none;
-//border-style: inset;
+border: 2px solid DarkGray;
+border-style: inset;
 padding: 5px 16px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -33,8 +36,8 @@ color:Black;
 font-size: 16px;
 font-weight: bold;
 border-radius: 10px;
-border: 2px solid DarkGray;
-border-style: inset;
+//border: 2px solid DarkGray;
+//border-style: inset;
 padding: 5px 16px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
