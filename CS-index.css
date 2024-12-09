@@ -5,7 +5,7 @@ Width:100%;
 #BX {display:block;}
 
 #D1{Width:230px;background-color: inherit;}
-
+#D6{Width:230px;background-color: inherit;}
 #B1,#B2,#B3,{Width:150px;Height:10px;}
 
 #D2, #D3{
@@ -20,7 +20,7 @@ font-family: "Times New Roman", Times, serif;
 font-weight: bold;
 //background-image:radial-gradient(Gray, Black);
 //background-color: Yellow;
-background-image: linear-gradient(180deg, LightGray, Gray);
+background-image: linear-gradient(180deg, white, yellow);
 border-radius: -2px;
 border: 2px solid DarkGray;
 border-style: inset;
