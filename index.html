@@ -3,53 +3,43 @@
 <Head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel=stylesheet type=text/css href="CS-index.css">
 <link rel=stylesheet type=text/css href="CS-Tank.css">
-<script src="JS-index.js"></script>
 <script src="JS-Tank.js"></script>
 
 </Head>
 <body>
-<?php
-echo "My first PHP script!";
-?>
-<div Id="D1">EASY CALCULATION</div>
-<div id="BX">BX MAIN
 
-<div Id="D2" onclick="Click1()">CONTAINER VOLUME CALCULATION </div> 
-  <div class="dropdown-content-1" Id="CN1">
-       <button class="Lst-2" id="Bt-1" type="button" onclick="Open_TankCalRound()">ROUND CONTAINER VOLUME CALCULATION</button> 
-       <button class="Lst-2" id="Bt-2" type="button" onclick="Open_TankCalRact()">RECTANGLE CONTAINER VOLUME CALCULATION</button>  
- </div>
-<div Id="D3"  onclick="Click2()">OTHER PURPOSES </div>
-  <div class="dropdown-content-2"Id="CN2"> 
-       <button class="Lst-2" id="Bt-3" type="button" onclick="">ROUND CONTAINER VOLUME CALCULATION</button> 
-       <button class="Lst-2" id="Bt-4" type="button" onclick="">RECTANGLE CONTAINER VOLUME CALCULATION</button>  
-  </div>    
+<div Id="D1">TANK CALCULATION</div>
+<div id="BX">
+<div id="BX1"> BX1
 
-
+<div id="D2">ROUND TANK - D2
+<br><label for="B1">DIA:</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B1" onchange="TankRound()">
+<br><label for="B2">HIEGHT:</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B2" onchange="TankRound()">
+<br><label for="B3">GRAVITY:</label><input type="number"  maxlength="3" width="10px" size="3" value=0.9 id="B3" onchange="TankRound()">
 </div>
-<div id = "O1">
- <br><label for="B1">DIA    :</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B1" onchange="TankRound()">
- <br><label for="B2">HIEGHT :</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B2" onchange="TankRound()">
- <br><label for="B3">GRAVITY:</label><input type="number"  maxlength="3" width="10px" size="3" value=0.9 id="B3" onchange="TankRound()">
-</div>
-<div id = "O2">
+
+<div id="D3">BOX/RACTANGLE TANK - D3
 <br><label for="B4">WIDTH :</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B4" onchange="Tank3d()">
 <br><label for="B5">LENGHT:</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B5" onchange="Tank3d()">
 <br><label for="B6">HIEGHT:</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B6" onchange="Tank3d()">
 <br><label for="B7">GRAVITY:</label><input type="number" maxlength="3" width="10px" size="3" value=0.9 id="B7" onchange="Tank3d()">
 </div>
-<div id = "O3">
-this is block
+
 </div>
-<div id="D6"> 
-THIS IS MY FIRST BLOCK (27-2-25)
-<br>
-index.html file is parent file  
-<?php
-echo "My first PHP script!";
-?>
+<div id="BX2">BX2
+<div id="D4">RESULT <br>
+              Liter Per Inch : <output id="R1"></output>
+              <br>
+              Weight Per Inch : <output id="R2"></output>
+              <br>
+              Total Capacity/Weight Tank : <output id="R3"></output>
+</div>
+<div id="D5">OBJECT</div>
+ Ratio : <output id="R4"></output>
+<canvas id="O1">
+</canvas>
+</div>
 </div>
 </body>
 </html>
