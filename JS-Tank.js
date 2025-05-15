@@ -49,7 +49,7 @@ function Tank3d(){
 
 }
 function ImportText(){
-let file = "text_test.txt"
+let file = "File_1.txt"
 fetch(file)
 .then(x => x.text())
 .then(y => document.getElementById("TX2").innerHTML = y);
