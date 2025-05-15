@@ -38,4 +38,16 @@ border-style: inset;
 padding: 5px 16px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+#TX1{
+Height:260px;
+Width:300px;
+color:Black;
+font-size: 16px;
+font-weight: bold;
+border-radius: 10px;
+border: 2px solid DarkGray;
+border-style: inset;
+padding: 5px 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
