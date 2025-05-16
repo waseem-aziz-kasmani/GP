@@ -31,7 +31,7 @@ function Button2(){
     x.style.display = "none";
   }    
 }
-function ImportText(){  
+function Button3(){  
      var x = document.getElementById("TX1");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -39,7 +39,7 @@ function ImportText(){
     x.style.display = "none";
   }    
 }
-function SaveText(){  
+function Button4(){  
      var x = document.getElementById("TX2");
   if (x.style.display === "none") {
     x.style.display = "block";
