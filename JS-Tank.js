@@ -23,7 +23,7 @@ function TankRound(){
     let  mCanvas = document.getElementById("O1");
     let mObject = mCanvas.getContext("2d");
     mObject.clearRect(100, 20, 200, 200);
-    mObject.fillStyle="Blue";
+    mObject.fillStyle="LightBlue";
     mObject.fillRect(100,20,mW,mH);
     
 }
@@ -52,6 +52,6 @@ function ImportText(){
 let file = "File_1.txt"
 fetch(file)
 .then(x => x.text())
-.then(y => document.getElementById("TX2").innerHTML = y);
+.then(y => document.getElementById("X1").innerHTML = y);
 
-}  
+} 
