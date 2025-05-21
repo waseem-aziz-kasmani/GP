@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<Head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=stylesheet type=text/css href="CS-Tank.css">
+<script src="JS-Tank.js"></script>
+<script src="JS-BUTTON.js"></script>
+<script src="Web_Worker-Current_Time.js"></script>
+<script src="Write_file_1_JS.js"></script>
+<script src="Write_file_2_JS.js"></script>  
+</Head>
+<body onload="timedCount()">
+<div Id="D1">LET US LEARN</div>
+
+<div id="BX">
+<br><input type="Button"   value="TANK CAL." id="MBT1" onClick="MButton1()">
+<br><input type="Button"   value="TEXT TILE" id="MBT2" onClick="MButton2()">
+<br><input type="Button"   value="NA" id="MBT3" onClick="MButton3()">
+<br><input type="Button"   value="NA" id="MBT4" onClick="MButton4()">
+<br><input type="Button"   value="NA" id="MBT5" onClick="MButton5()">
+
+              
+</div>
+
+<!--BOX-1 TANKS CALCULATION *****************************--> 
+ <div id="BX1"> 
+        TANK CALCULATION
+       <br><input type="Button"  value=ROUND TANK id="BT1" onClick="Button1()">
+           <input type="Button"  value=RACTANGLE TANK id="BT2" onClick="Button2()">
+         <div id="D2">ROUND TANK - D2
+           <br><label for="B1">DIA:</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B1" onchange="TankRound()">
+           <br><label for="B2">HIEGHT:</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B2" onchange="TankRound()">
+           <br><label for="B3">GRAVITY:</label><input type="number"  maxlength="3" width="10px" size="3" value=0.9 id="B3" onchange="TankRound()">
+         </div>
+         
+         <div id="D3">BOX/RACTANGLE TANK - D3
+           <br><label for="B4">WIDTH :</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B4" onchange="Tank3d()">
+           <br><label for="B5">LENGHT:</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B5" onchange="Tank3d()">
+           <br><label for="B6">HIEGHT:</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B6" onchange="Tank3d()">
+           <br><label for="B7">GRAVITY:</label><input type="number" maxlength="3" width="10px" size="3" value=0.9 id="B7" onchange="Tank3d()">
+         </div>
+         
+         <div id="D4">RESULT <br>
+              Liter Per Inch : <output id="R1"></output>
+              <br>
+              Weight Per Inch : <output id="R2"></output>
+              <br>
+              Total Capacity/Weight Tank : <output id="R3"></output>
+              
+         </div>
+
+
+<!-- CANVAS OBJECT *****************************-->  
+  <div id="D5">
+     <br>
+     Ratio : <output id="R4"></output> 
+     
+  </div>
+     
+    <canvas id="O1"></canvas> 
+
+  </div>
+<!-- BOX 2 *****************************-->
+<div id="BX2">BX2
+   <br><input type="Button"  maxlength="3" width="30px" size="3" value=OPEN TEXT id="BT8" onClick="Button3()">
+       <input type="Button"  maxlength="3" width="30px" size="3" value=SAVE TEXT id="BT9" onClick="Button4()">
+   <div id="TX1">
+       <input type="Button"  maxlength="3" width="30px" size="3" value=OPEN TEXT id="BT10" onClick="ImportText()">
+       <br>
+       <output id="X1">FILE</output>
+   </div>
+
+   <div id="TX2">SAVE DATA TO FILE
+        <br>
+        
+        <input type="Button"  value="SAVE FILE 1" id="BT11" onClick="SaveFile1Text()">
+        <br>
+        <input type="Button"  value="SAVE FILE 2" id="BT12" onClick="SaveFile2Text()">
+        <br>  
+     <output id="Y1"></output>
+  </div>
+
+</div>
+<?php
+echo "My first PHP script!";
+?>  
+<!-- FOOTER *****************************-->
+<div id="FT1"> 
+     <br>COUNTER : <output id="TX4"></output>
+     <br><output id="TX5"></output>
+</div>
+</body>
+</html>
