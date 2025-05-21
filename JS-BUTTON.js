@@ -14,6 +14,14 @@ function MButton2(){
     x.style.display = "none";
   }
 }
+function MButton3(){  
+    var x = document.getElementById("BX3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 function Button1(){  
     var x = document.getElementById("D2");
   if (x.style.display === "none") {
