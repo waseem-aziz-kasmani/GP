@@ -55,3 +55,11 @@ fetch(file)
 .then(y => document.getElementById("X1").innerHTML = y);
 
 } 
+function RGBAdisplay(){
+let R = document.getElementById("BT13").value;
+let G = document.getElementById("BT14").value;
+let B = document.getElementById("BT15").value;
+let A = document.getElementById("BT16").value;
+document.getElementById("BX3-2").innerHTML = "RGBA( " + R + ", "+ G +", " + B+", " + A/10+") "  ;
+document.getElementById("BX3-2").style.backgroundColor = "RGBA( " + R + ", "+ G +", " + B+", " + A/10+") "  ;
+}
