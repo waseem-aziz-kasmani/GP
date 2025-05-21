@@ -16,7 +16,7 @@
 <div id="BX">
 <br><input type="Button"   value="TANK CAL." id="MBT1" onClick="MButton1()">
 <br><input type="Button"   value="TEXT TILE" id="MBT2" onClick="MButton2()">
-<br><input type="Button"   value="NA" id="MBT3" onClick="MButton3()">
+<br><input type="Button"   value="COLOR RGBA" id="MBT3" onClick="MButton3()">
 <br><input type="Button"   value="NA" id="MBT4" onClick="MButton4()">
 <br><input type="Button"   value="NA" id="MBT5" onClick="MButton5()">
 
@@ -82,9 +82,19 @@
   </div>
 
 </div>
-<?php
-echo "My first PHP script!";
-?>  
+<!-- BOX 3 COLORS RGBA***********************-->
+<div id="BX3">
+  <div id="BX3-1">
+  <br>R<input type="Number"  max=255 min= 0 value=100 id="BT13" onchange="RGBAdisplay()">
+  <br>G<input type="Number"  max=255 min= 0 value=100 id="BT14" onchange="RGBAdisplay()">
+  <br>B<input type="Number"  max=255 min= 0 value=100 id="BT15" onchange="RGBAdisplay()">
+  <br>A<input type="Number"  max=10 min= 1 value=10 id="BT16" onchange="RGBAdisplay()"> 
+  </div>
+  <div id="BX3-2"></div>
+</div>
+
+
+</div>
 <!-- FOOTER *****************************-->
 <div id="FT1"> 
      <br>COUNTER : <output id="TX4"></output>
